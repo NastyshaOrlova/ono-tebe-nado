@@ -10,22 +10,28 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
-            <a class="header__link header__link_active">главная</a>
+            <a href="#header" class="header__link header__link_active"
+              >главная</a
+            >
           </li>
           <li class="header__links-list-item">
-            <a class="header__link">посмотреть лоты</a>
+            <a href="#lots" class="header__link">посмотреть лоты</a>
           </li>
           <li class="header__links-list-item">
-            <a class="header__link">об аукционе</a>
+            <a href="#about" class="header__link">об аукционе</a>
           </li>
         </ul>
       </nav>
       <a class="header__logo">
-        <img class="header__logo-image" src="./images/logo-black.svg" alt="" />
+        <img
+          class="header__logo-image"
+          src="./images/logo-black.svg"
+          alt="Логотип ОНО ТЕБЕ НАДО"
+        />
       </a>
       <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
@@ -70,10 +76,10 @@
               >е<span class="no-letter-spacing">в</span></span
             >ерил
           </p>
-          <button class="bet-button">СДЕЛАТЬ СТАВКУ</button>
+          <button class="bet-button" type="button">СДЕЛАТЬ СТАВКУ</button>
         </div>
       </section>
-      <section class="lots">
+      <section class="lots" id="lots">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
@@ -131,7 +137,7 @@
 
         <a href="#" class="lots__look-more-link">посмотреть больше</a>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__logo">
           <img
             src="./images/logo-white.svg"
@@ -162,7 +168,6 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <address class="address footer__adress_align-left">
         <a href="tel:+99995555555">+9 999 555 5555</a>
@@ -176,13 +181,15 @@
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-list-item">
-            <a class="footer__menu-link footer__menu-link_active">главная</a>
+            <a href="#header" class="footer__menu-link footer__menu-link_active"
+              >главная</a
+            >
           </li>
           <li class="footer__menu-list-item">
-            <a class="footer__menu-link">посмотреть лоты</a>
+            <a href="#lots" class="footer__menu-link">посмотреть лоты</a>
           </li>
           <li class="footer__menu-list-item">
-            <a class="footer__menu-link">об аукционе</a>
+            <a href="#about" class="footer__menu-link">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -190,23 +197,23 @@
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
           <a class="footer__social-link">
+            <img src="./images/yt.svg" alt="Ютуб" class="footer__social-icon" />
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link">
             <img
-              src="./images/yt.svg"
-              alt="YouTube"
+              src="./images/vk.svg"
+              alt="Вконтакте"
               class="footer__social-icon"
             />
           </a>
         </li>
         <li class="footer__social-list-item">
           <a class="footer__social-link">
-            <img src="./images/vk.svg" alt="VK" class="footer__social-icon" />
-          </a>
-        </li>
-        <li class="footer__social-list-item">
-          <a class="footer__social-link">
             <img
               src="./images/pinterest.svg"
-              alt="Pinterest"
+              alt="Пинтерест"
               class="footer__social-icon"
             />
           </a>
